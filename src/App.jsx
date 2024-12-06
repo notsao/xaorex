@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import TOS from './Pages/TOS/TOS';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import Auth from './Pages/Auth/Auth';
+import Onboarding from './Pages/Onboaridng/Onboarding';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/TermsOfService' element={<TOS />} />
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='/login' element={<Auth />} />
+        <Route path='/onboarding' element={<Onboarding />} />
       </Routes>
     </Router>
   );
