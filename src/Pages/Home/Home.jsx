@@ -15,6 +15,7 @@ import imgplaceholder from '../../assets/imgplaceholder.svg'
 import Footer from '../../Standalone/Footer';
 import online from '../../assets/online.svg';
 import ContactUs from '../../Standalone/ContactUs';
+import Footer1 from '../../Standalone/Footer1';
 
 function Home() {
   return (

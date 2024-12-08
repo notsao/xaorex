@@ -1,61 +1,73 @@
 import React from 'react';
 import CurvyBackground from '../assets/curvyBackground.svg';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className="relative bg-[#0d0c3d] text-white py-10">
+    <div className="relative bg-[#0d0c3d] text-white overflow-hidden">
+      {/* Curvy Background */}
       <img
         src={CurvyBackground}
         alt="Curvy Background"
-        className="absolute top-0 left-0 w-screen h-[500px] object-cover"
-/>
-      <div className="relative z-10 flex flex-col items-center">
-        <div className="w-full px-6 mb-6 items-center">
-          <h2 className="text-xl font-bold mb-2 text-left">Build your online presence today</h2>
-          <p className="mb-4 text-left">
-            Get in touch with us today to explore your future on the internet
-          </p>
-          <button className="bg-black text-white px-5 py-2 rounded mb-4 hover:bg-gray-800">
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+
+      {/* Footer Content */}
+      <div className="relative z-10 p-6"> {/* Ensures content appears above the background */}
+        <h2 className="text-2xl font-bold text-center">
+          Build your online presence today
+        </h2>
+        <p className="text-center text-gray-300 mt-2">
+          Get in touch with us today to explore your future on the internet.
+        </p>
+        <div className="text-center mt-6">
+          <button className="bg-black text-white py-2 px-6 rounded hover:bg-gray-800">
             Contact Us
           </button>
         </div>
-        <div className="w-full px-6 mb-4 flex justify-end">
-          <div className="text-right">
-            <p className="flex items-center mb-2">
-              <FaEnvelope className="mr-2" /> contact@xaorex.com
-            </p>
-            <p className="flex items-center">
-              <FaPhone className="mr-2" /> 0118 9999 999
-            </p>
+        <hr className="my-10 border-bg-main" />
+        <div className="flex flex-wrap justify-between">
+          {/* Office Hours */}
+          <div>
+            <h3 className="text-lg font-semibold">Office Hours</h3>
+            <p className="mt-2 text-white">Monday to Friday, 9AM to 5PM</p>
           </div>
-        </div>
-        <div className="w-full border-t border-gray-700 pt-4 flex justify-around">
-          <div className="text-center">
-            <h3 className="font-bold mb-2">Office Hours</h3>
-            <p>Monday to Friday, 9AM to 5PM</p>
+
+          {/* Blogs */}
+          <div>
+            <h3 className="text-lg font-semibold">Blogs</h3>
+            <ul className="mt-2 text-white">
+              <li>
+                <a href="#" className="hover:text-gray-400">
+                  What is SEO?
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-400">
+                  Why is a website necessary in 2025?
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="text-center">
-            <h3 className="font-bold mb-2">Blogs</h3>
-            <p>What is SEO?</p>
-            <p>Why is a website necessary in 2025?</p>
-          </div>
-          <div className="text-center">
-            <h3 className="font-bold mb-2">Social Media</h3>
-            <div className="flex flex-col space-x-2">
-              <button className="flex items-center bg-[#E1306C] hover:bg-[#992149] text-white px-4 py-1 rounded-full mb-2 duration-300">
-                <FaInstagram className="mr-2" /> Instagram
-              </button>
-              <button className="flex items-center bg-[#3b5998] hover:bg-[#2a3f6d] text-white px-4 py-1 rounded-full mb-2 duration-300">
-                <FaFacebook className="mr-2" /> Facebook
-              </button>
-              <button className="flex items-center bg-[#25D366] hover:bg-[#338b52] text-white px-4 py-1 rounded-full duration-300">
-                <FaWhatsapp className="mr-2" /> Whatsapp
-              </button>
+
+          {/* Social Media */}
+          <div>
+            <h3 className="text-lg font-semibold">Social Media</h3>
+            <div className="flex mt-2 gap-4">
+              <a href="#" className="flex items-center gap-2 text-pink-500">
+                <FaInstagram /> Instagram
+              </a>
+              <a href="#" className="flex items-center gap-2 text-blue-500">
+                <FaFacebook /> Facebook
+              </a>
+              <a href="#" className="flex items-center gap-2 text-green-500">
+                <FaWhatsapp /> WhatsApp
+              </a>
             </div>
           </div>
         </div>
-        <p className="mt-4">© 2024 - XAOREX</p>
+        <hr className="my-10 border-bg-main" />
+        <p className="text-center text-white">© 2024 · XAOREX</p>
       </div>
     </div>
   );

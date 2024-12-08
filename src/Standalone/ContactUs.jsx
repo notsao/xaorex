@@ -9,10 +9,16 @@ function ContactUs() {
         setEmail(e.target.value); 
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        console.log('Submitted Email:', email)
+        //inset API POST request to DB to store data
+    }
+
     return (
         <div className="flex justify-center items-center my-10">
-            <div className="w-1/2 h-auto flex flex-row bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 rounded-tr-[50px] rounded-bl-[50px] p-10">
-                <div className="flex flex-col w-2/3">
+            <div className="w-1/2 h-auto flex flex-row justify-center items-center space-x-0 bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 rounded-tr-[50px] rounded-bl-[50px] p-10">
+                <div className="flex flex-col">
                     <div className='font-extrabold text-3xl md:text-5xl text-white mb-4'> Still have questions?</div>
                     <div className='text-lg md:text-xl text-white mb-6'> Input your email and we will get back to you swiftly!  </div>
                     <div className="flex flex-col sm:flex-row items-center sm:space-x-4">
