@@ -74,7 +74,7 @@ function Pricing() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center space-x-10 py-10">
+    <div className="flex flex-wrap justify-center space-x-10 py-10 mt-16">
       {plans.map((plan, index) => (
         <div
           key={index}

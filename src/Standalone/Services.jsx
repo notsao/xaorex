@@ -61,16 +61,20 @@ function Services() {
   return (
     <div className="bg-[#002262] py-10">
   <h2 className="text-center text-white text-3xl font-bold mb-8">Our services include:</h2>
-  <div className="grid grid-cols-3 gap-x-[-100px] gap-y-8 justify-items-center">
+  <div className="grid grid-cols-3 gap-x-0 gap-y-8 justify-items-center w-1/2 mx-auto">
     {services.map((service, index) => (
       <div key={index} className="flex flex-col items-center bg-[#3F16BB] p-4 rounded-lg shadow-md w-80">
-        <div className='flex flex-row items-center justify-center'><img src={service.icon} alt={service.title} className="mb-4 mr-4" />
-        <h3 className="text-lg font-bold mb-2">{service.title}</h3></div>
+        <div className='flex flex-row items-center justify-center'>
+          <img src={service.icon} alt={service.title} className="mb-4 mr-4" />
+          <h3 className="text-lg font-bold mb-2">{service.title}</h3>
+        </div>
         <p className="text-center">{service.description}</p>
       </div>
     ))}
   </div>
 </div>
+
+
   );
 }
 

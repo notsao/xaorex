@@ -59,7 +59,6 @@ Create a new branch for your feature or bug fix:
 
 bash
 
-CopyInsert in Terminal
 
 `git checkout -b feature/your-feature-name`
 
@@ -99,6 +98,3 @@ This project is licensed under the [Your License] - see the  [LICENSE](https://f
 ## Acknowledgments
 
 -   Thanks to Abdel for coding allat.
-
-
- ``This `README.md` provides a comprehensive guide for users and contributors. You can adjust the placeholders and descriptions to fit the specifics of your project. If you need further customization or have any questions, feel free to ask!``

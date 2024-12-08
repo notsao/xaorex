@@ -43,13 +43,13 @@ function Footer() {
           <div className="text-center">
             <h3 className="font-bold mb-2">Social Media</h3>
             <div className="flex flex-col space-x-2">
-              <button className="flex items-center bg-[#E1306C] text-white px-4 py-1 rounded-full mb-2">
+              <button className="flex items-center bg-[#E1306C] hover:bg-[#992149] text-white px-4 py-1 rounded-full mb-2 duration-300">
                 <FaInstagram className="mr-2" /> Instagram
               </button>
-              <button className="flex items-center bg-[#3b5998] text-white px-4 py-1 rounded-full mb-2">
+              <button className="flex items-center bg-[#3b5998] hover:bg-[#2a3f6d] text-white px-4 py-1 rounded-full mb-2 duration-300">
                 <FaFacebook className="mr-2" /> Facebook
               </button>
-              <button className="flex items-center bg-[#25D366] text-white px-4 py-1 rounded-full">
+              <button className="flex items-center bg-[#25D366] hover:bg-[#338b52] text-white px-4 py-1 rounded-full duration-300">
                 <FaWhatsapp className="mr-2" /> Whatsapp
               </button>
             </div>

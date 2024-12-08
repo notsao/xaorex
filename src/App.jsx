@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import TOS from './Pages/TOS/TOS';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import Auth from './Pages/Auth/Auth';
-import Onboarding from './Pages/Onboaridng/Onboarding';
+import Onboarding from './Pages/Onboarding/Onboarding';
 
 
 function App() {
